@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    font-family: 'League Spartan', sans-serif;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: lightcyan;
+}
+
+*:before, *:after {
+    box-sizing: inherit;  
+}
+
+/* Header*/
+
+.banner {
+    width: 100vw;
+    height: 7em;
+    background-color: lightblue;
+}
+.quiensoy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-profile {
+    border-radius: 99%;
+    width: 220px;
+    height: 200px;
+    margin-top: 75px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 4px 0 4px;
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+
+.profesion {
+    font-size: 1.25rem;
+    color: rgb(145, 145, 145);
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20rem;
+    font-size: 1.1rem;
+}
+
+/* Main */
+h2 {
+    text-align: center;
+    border-bottom: 3px solid rgb(81, 130, 236);
+    color: rgb(50, 103, 216);
+    
+}
+
+.formacion-skills {
+    display: flex;
+    text-align: justify;
+    padding: 1em;
+    justify-content: center;
+    width: 100vw;
+}
+
+.inline {
+    width: 40vw;
+    padding: 1em;
+}
+
+.name {
+    width: 99%;
+    height: auto;
+}
+
+li, p {
+    padding-bottom: 1em;
+    color: rgb(46, 76, 133);
+}
+
+br{  
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 0.5em !important;
+}
+
+/* Footer */
+
+.contacto {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: lightblue;
+}
+
+.imagenes {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 0 5em;
+    background-color: rgb(111, 173, 194);
+}
+
+img { 
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 80rem){
+    .resumen{
+        margin: 10px 5px;
+    }
+
+    .formacion-skills {
+        display: block;
+        width: 100vw;
+    }
+
+    .inline {
+        width: 85vw;
+        justify-content: center;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .imagenes {
+        text-align: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+}
